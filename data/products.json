@@ -26,5 +26,11 @@
     "description": "X XBEN multipurpose ropes are best for rescue work,caving,hiki ng,rappelling,rock climbing,tree work,indoor/outdoor life safety rope,climbing fixed l ines with ascenders and hauling loads.",
     "category": "Outdoor",
     "price": 249.56
+  },
+  {
+    "id": "5",
+    "name": "The Price of Time",
+    "category": "Books",
+    "price": 17.9
   }
 ]
