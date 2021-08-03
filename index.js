@@ -1,3 +1,4 @@
+const { resolveMx } = require('dns');
 const express = require('express');
 const repoContext = require('./repository/repository-wrapper');
 const app = express();
@@ -28,3 +29,9 @@ app.put('/api/products/:id', (req, res) => {
     const updatedProduct = repoContext.products.updateProduct(id, productPropertiesToUpdate);
     return res.send(updatedProduct);
 });
+
+app.delete('/api/products/:id', (req, res) => {
+    const id = req.params.id;
+    const updatedDataSet = repoContext.products.deleteProduct(id);
+    return res.send(updatedDataSet);
+})
